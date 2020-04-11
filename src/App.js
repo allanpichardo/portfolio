@@ -50,7 +50,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="App" id="mainView">
-                <video className="App-video" muted={true} loop={true} autoPlay={true} ref={this.backgroundVideo}/>
+                <video className="App-video" muted={true} loop={true} autoPlay={true} ref={this.backgroundVideo} playsinline/>
                 <div className="App-header">
                     <NavBar/>
                 </div>
