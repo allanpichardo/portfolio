@@ -7,6 +7,8 @@ const PORT = process.env.PORT || 3001;
 const express = require('express');
 const emailApp = express();
 
+app.use(express.static('public'));
+
 emailApp.use(express.urlencoded({ extended: true }));
 emailApp.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from

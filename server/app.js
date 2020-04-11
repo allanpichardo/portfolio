@@ -8,13 +8,26 @@ const React = require('react');
 
 const clientBuildPath = path.resolve(__dirname, '../client');
 
+let helmetCtx;
+const app = createReactAppExpress({
+  clientBuildPath,
+  universalRender: handleUniversalRender,
+  onFinish(req, res, html) {
+    const { helmet } = helmetCtx;
+    const helmetTitle = helmet.title.toString();
+    const helmetMeta = helmet.meta.toString();
+    const newHtml = html
+        .replace('{{HELMET_TITLE}}', helmetTitle)
+        .replace('{{HELMET_META}}', helmetMeta);
+    res.send(newHtml);
+  },
+});
+
 function handleUniversalRender(req, res) {
-
-  const helmetContext = {};
-
   const context = {};
+  helmetCtx = {};
   const el = (
-      <HelmetProvider context={helmetContext}>
+      <HelmetProvider context={helmetCtx}>
         <StaticRouter location={req.url} context={context}>
           <App />
         </StaticRouter>
@@ -28,11 +41,6 @@ function handleUniversalRender(req, res) {
 
   return el;
 }
-
-const app = createReactAppExpress({
-  clientBuildPath,
-  universalRender: handleUniversalRender
-});
 
 if (module.hot) {
   module.hot.accept('../src/App', () => {
