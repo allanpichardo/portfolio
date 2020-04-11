@@ -1,0 +1,44 @@
+.NavBar {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    grid-template-columns: 4fr 1fr;
+    padding-right: 20px;
+    overflow: visible;
+}
+
+.NavBar-dropdown {
+    display: block;
+    position: fixed;
+    background-color: var(--color-accent);
+    padding: 10px 16px;
+    visibility: hidden;
+    z-index: 5;
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.NavBar-dropdown a{
+    margin-left: 0 !important;
+}
+
+.NavBar a{
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 16px;
+    font-size: large;
+    color: var(--color-text-secondary);
+    background-color: var(--color-accent);
+}
+
+.NavBar a:hover {
+    color: var(--color-accent);
+    background-color: var(--color-text-secondary);
+    /*text-decoration: underline;*/
+}
+
+.NavBar-active {
+    color: var(--color-accent) !important;
+    background-color: var(--color-text-secondary) !important;
+    /*text-decoration: underline;*/
+}

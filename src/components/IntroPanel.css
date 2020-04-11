@@ -1,0 +1,26 @@
+.IntroPanel {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: x-large;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.IntroPanel h1 {
+    color: var(--color-text-secondary);
+    /*background-color: var(--color-accent);*/
+    font-weight: bold;
+}
+
+.IntroPanel span {
+    width: 80%;
+    text-align: right;
+    animation: 1s ease-in-out 1s infinite alternate bob;
+}
+
+@keyframes bob {
+    from { margin-left: 0; }
+    to   { margin-left: 24px; }
+}

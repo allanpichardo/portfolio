@@ -1,0 +1,7 @@
+.WorksOverview {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    overflow-x: scroll;
+}
+

@@ -1,0 +1,79 @@
+.Contact {
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-gap:10px;
+    display: grid;
+    grid-template-areas:
+    "message form .";
+    grid-template-columns: 1fr 2fr 1fr;
+    font-size: large;
+}
+
+@media screen and (max-width: 500px) {
+    .Contact {
+        grid-template-areas:
+                "message form";
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.Contact-message {
+    grid-area: message;
+}
+
+.Contact-form {
+    grid-area: form;
+    align-self: center;
+}
+
+.Contact input{
+    height: 30px;
+    border: none;
+    font-size: large;
+    border-radius: 1px;
+    background-color: var(--color-text-secondary);
+    color: var(--color-accent);
+    width: 100%;
+}
+
+.Contact textarea {
+    width: 100%;
+    height: 150px;
+    border: none;
+    font-size: large;
+    border-radius: 1px;
+    background-color: var(--color-text-secondary);
+    color: var(--color-accent);
+}
+
+.Contact-success {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact-error {
+    display: none;
+}
+
+.Contact-error mark {
+    background-color: red;
+    color: yellow;
+    font-weight: bold;
+}
+
+.Contact button {
+    border: none;
+    background-color: var(--color-accent);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    float: right;
+    height: 48px;
+    width: 100px;
+}

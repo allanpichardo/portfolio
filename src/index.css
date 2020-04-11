@@ -1,13 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Source+Code+Pro|Source+Sans+Pro&display=swap');
+
+:root {
+  --color-bg-main: rgb(68,184,188);
+  --color-text-secondary: rgb(13,17,91);
+  --color-text-primary: rgb(34,34,34);
+  --color-overlay: rgb(238,238,238);
+  --color-accent: rgb(205,72,72);
+
+  --font-body: 'Source Sans Pro', sans-serif;
+  --font-heading: 'Source Code Pro', monospace;
+}
+
+html {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+mark {
+  background-color: var(--color-accent);
+  color: var(--color-text-secondary);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  width: 100vw;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--color-bg-main);
+  font-family: var(--font-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  height: 100%;
 }

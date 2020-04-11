@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Jump*",
+    "subtitle": "2019 - Unity, C#",
+    "media_dir": "/jump",
+    "cover_video": "jump1.mp4",
+    "description_1": "Jump* is a hybrid game that combines the movement mechanics of the classic Chu Chu Rocket with the spatial puzzle elements of Portal. The game challenges the player to deploy strategically-placed portals on the board to create a clear path to the goal.",
+    "description_2": "Expanding on Chu Chu Rocket's limited movement, where characters may only move forward and turn right in 90-degree angles on a 2D plane, the portals in Jump* allow the user to teleport to and from any of the six spatial dimensions. The added freedom of movement increases the difficulty of the puzzles and opens new opportunities for unique gameplay.",
+    "link": "https://jump.allanpichardo.com",
+    "notes": "Jump* is a 3D puzzle game combining the mechanics of Chu Chu Rocket and Portal.",
+    "youtube_video_id": "HDOnMSUS5-c",
+    "video2": "jump2.mp4"
+  },
+  {
+    "name": "Talkinghead",
+    "subtitle": "2019 - Node.js, Python, SQL, WebSocket, JavaScript, Natural Language Processing, Web Audio API",
+    "media_dir": "/talkinghead",
+    "cover_video": "th1.mp4",
+    "link": "https://talkinghead.allanpichardo.com",
+    "notes": "Talkinghead is a virtual pundit. Two chatbots that generate discussions about controversial tweets in real-time.",
+    "youtube_video_id": "YNdpiSYdJkE",
+    "description_1": "Talkinghead is a commentary on the idea of post-truth and the toxic feedback loop between traditional news media and social media in the form of an interactive, satirical, news program. It features two animated chatbots that generate commentary in response to trending news topics on Twitter.",
+    "description_2": "The chatbots monitor Twitter for specific hashtags and use natural language processing to analyze the contents of the tweets. Based on the keywords found in the body of the tweets, Talkinghead will generate a commentary script in real-time and begin to read it, simulating pundits in a news program.",
+    "video2": "th1.mp4"
+  },
+  {
+    "name": "Equilibria",
+    "subtitle": "2020 - Max/MSP, OpenCV, Arduino, Android SDK",
+    "media_dir": "/equilibria",
+    "cover_video": "eq1.mp4",
+    "link": "https://falaeco.github.io/cart411-OVERFLOW",
+    "notes": "Equilibria is a dialogue between an ecosystem in peril and the viewer. As visitors interact with an interactive sculpture, they are forced to confront the reality that their consumption ultimately leads to the system’s destruction. This realization prompts viewers to consider how best to conserve the experience for future visitors, who serve as a proxy for future generations. Equilibria invites viewers to think about their place within the global ecosystem and hopes to develop an awareness of their own finite reality",
+    "youtube_video_id": "alJGOYO-9xU",
+    "description_1": "Equilibria is an interactive installation built in collaboration with Emily Wu, Audre-Laure St. Louis, Nick Prud'homme, and Dylan Hancock exploring the negative effects of technological progress on the surrounding natural environment. The installation consists of an artificial system of trees and roots connected to a central source of water.",
+    "description_2": "Using computer vision, the installation tracks viewers as they walk around the artificial forest and releases a contaminant into the central reservoir if the viewer lingers in one place for too long. Over time, a critical accumulation of contaminated water corrupts the system, killing the surrounding vegetation and deactivating the installation.",
+    "video2": "drop1.mp4"
+  },
+  {
+    "name": "Love MHz",
+    "subtitle": "2017 - JavaScript, React, Web Audio API",
+    "cover_video": "mhz1.mp4",
+    "media_dir": "/lovemhz",
+    "link": "https://lovemhz.allanpichardo.com",
+    "notes": "LoveMHz is a synthesizer and sequencer that runs on the browser.",
+    "youtube_video_id": "kjEdvqFBqvs",
+    "description_1": "Love MHz is a web-based synthesizer with a built-in sequencer inspired by the Korg MS-20's two-oscillator, two-filter synthesizer design. The interface consists of custom React components that use the Web Audio API and combine to generate sound through subtractive synthesis.",
+    "description_2": "The sequencer arranges notes into four tracks which can be dialed into Euclidean rhythm patterns. Like the real MS-20, the lowpass and highpass filters can be overdriven to the point of saturation to distort the sound of the synth.",
+    "video2": "mhz2.mp4"
+  },
+  {
+    "name": "Polypad",
+    "subtitle":"2018 - C, Embedded System Design",
+    "cover_video": "seq1.mp4",
+    "link": "https://github.com/allanpichardo/polypad",
+    "notes": "Polypad is a standalone, polymetric arpeggiator custom firmware for the Launchpad Pro grid controller.",
+    "youtube_video_id": "eGHHecotLHs",
+    "media_dir": "/polypad",
+    "description_1": "Polypad is a custom firmware for the Novation Launchpad Pro that converts the device into a standalone polymetric arpeggiator. Inspired by the classic Monome application Polygome, Polypad allows the Launchpad to layer up to 8 simultaneous Euclidean rhythmic patterns.",
+    "description_2": "Each pattern can be independently quantized to any of the seven modes and can send MIDI notes and clock to 8 different channels. Combined with a polyphonic synthesizer, Polypad can act as the central sequencer of a DAWless rig.",
+    "video2": "seq2.mp4"
+  }
+]

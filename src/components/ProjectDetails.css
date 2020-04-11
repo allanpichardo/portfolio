@@ -1,0 +1,146 @@
+.ProjectDetails {
+    height: 100%;
+    overflow-y: scroll;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ProjectDetails video {
+    width: 100%;
+    /*max-height: 480px;*/
+    /*max-width: 720px;*/
+}
+
+/* This element defines the size the iframe will take.
+   In this example we want to have a ratio of 25:14 */
+.ProjectDetails-aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
+}
+
+.ProjectDetails-aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.ProjectDetails h1 {
+    font-size: xx-large;
+}
+
+.ProjectDetails h2 {
+    font-size: small;
+}
+
+.ProjectDetails-section {
+    font-size: x-large;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 70px 1fr 1fr 1fr 1fr 1.1fr;
+    grid-template-areas:
+            "title . ."
+            "subtitle . ."
+            "a1 b1 c1"
+            "d1 e1 f1"
+            "g1 h1 i1"
+            "a2 b2 c2"
+            "d2 e2 f2";
+}
+
+.ProjectDetails-title {
+    grid-area: title;
+}
+
+.projectDetails-subtitle {
+    grid-area: subtitle;
+}
+
+.ProjectDetails-video1 {
+    grid-area: a1-start / a1-start / e1-end / e1-end;
+}
+
+.ProjectDetails-description1 {
+    grid-area: c1-start / c1-start /i1-end / i1-end;
+}
+
+.ProjectDetails-background1 {
+    background-color: var(--color-text-secondary);
+    grid-area: e1-start / e1-start / i1-end / i1-end;
+}
+
+.ProjectDetails-video2 {
+    grid-area: b2-start / b2-start / f2-end / f2-end;
+}
+
+.ProjectDetails-description2 {
+    grid-area: g1-start / g1-start /d2-end / d2-start;
+}
+
+.ProjectDetails-background2 {
+    background-color: var(--color-text-secondary);
+    grid-area: d2-start / d2-start / e2-end / e2-end;
+}
+
+@media screen and (min-width: 1131px) {
+
+    .ProjectDetails-section {
+        grid-template-rows: 60px 70px 1fr 0.1fr 1fr 1fr 1.1fr;
+        font-size: xx-large;
+    }
+
+    .ProjectDetails-video1 {
+        grid-area: a1-start / a1-start / h1-end / h1-end;
+    }
+
+    .ProjectDetails-description1 {
+        grid-area: c1-start / c1-start /i1-end / i1-end;
+    }
+
+    .ProjectDetails-background1 {
+        background-color: var(--color-text-secondary);
+        grid-area: e1-start / e1-start / i1-end / i1-end;
+    }
+
+    .ProjectDetails-video2 {
+        grid-area: b2-start / b2-start / f2-end / f2-end;
+    }
+
+    .ProjectDetails-description2 {
+        grid-area: a2-start / a2-start /d2-end / d2-start;
+    }
+
+    .ProjectDetails-background2 {
+        background-color: var(--color-text-secondary);
+        grid-area: d2-start / d2-start / e2-end / e2-end;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .ProjectDetails-section {
+        grid-template-columns: 0 1fr 0;
+        grid-gap: 0;
+        grid-template-rows: 60px 0.1fr 0.5fr 0.5fr 0.1fr 1fr 0.3fr;
+    }
+    .ProjectDetails-video1 {
+        grid-area: b1;
+    }
+
+    .ProjectDetails-description1 {
+        grid-area: e1;
+    }
+
+    .ProjectDetails-video2 {
+        grid-area: h1;
+    }
+
+    .ProjectDetails-description2 {
+        grid-area: b2;
+    }
+
+}
