@@ -46,11 +46,11 @@
     grid-template-areas:
             "title . ."
             "subtitle . ."
-            "a1 b1 c1"
-            "d1 e1 f1"
-            "g1 h1 i1"
-            "a2 b2 c2"
-            "d2 e2 f2";
+            "aa1 bb1 cc1"
+            "dd1 ee1 ff1"
+            "gg1 hh1 ii1"
+            "aa2 bb2 cc2"
+            "dd2 ee2 ff2";
 }
 
 .ProjectDetails-title {
@@ -62,29 +62,29 @@
 }
 
 .ProjectDetails-video1 {
-    grid-area: a1-start / a1-start / e1-end / e1-end;
+    grid-area: aa1-start / aa1-start / ee1-end / ee1-end;
 }
 
 .ProjectDetails-description1 {
-    grid-area: c1-start / c1-start /i1-end / i1-end;
+    grid-area: cc1-start / cc1-start / ii1-end / ii1-end;
 }
 
 .ProjectDetails-background1 {
     background-color: var(--color-text-secondary);
-    grid-area: e1-start / e1-start / i1-end / i1-end;
+    grid-area: ee1-start / ee1-start / ii1-end / ii1-end;
 }
 
 .ProjectDetails-video2 {
-    grid-area: b2-start / b2-start / f2-end / f2-end;
+    grid-area: bb2-start / bb2-start / ff2-end / ff2-end;
 }
 
 .ProjectDetails-description2 {
-    grid-area: g1-start / g1-start /d2-end / d2-start;
+    grid-area: gg1-start / gg1-start / dd2-end / dd2-start;
 }
 
 .ProjectDetails-background2 {
     background-color: var(--color-text-secondary);
-    grid-area: d2-start / d2-start / e2-end / e2-end;
+    grid-area: dd2-start / dd2-start / ee2-end / ee2-end;
 }
 
 @media screen and (min-width: 1131px) {
@@ -95,29 +95,29 @@
     }
 
     .ProjectDetails-video1 {
-        grid-area: a1-start / a1-start / h1-end / h1-end;
+        grid-area: aa1-start / aa1-start / hh1-end / hh1-end;
     }
 
     .ProjectDetails-description1 {
-        grid-area: c1-start / c1-start /i1-end / i1-end;
+        grid-area: cc1-start / cc1-start / ii1-end / ii1-end;
     }
 
     .ProjectDetails-background1 {
         background-color: var(--color-text-secondary);
-        grid-area: e1-start / e1-start / i1-end / i1-end;
+        grid-area: ee1-start / ee1-start / ii1-end / ii1-end;
     }
 
     .ProjectDetails-video2 {
-        grid-area: b2-start / b2-start / f2-end / f2-end;
+        grid-area: bb2-start / bb2-start / ff2-end / ff2-end;
     }
 
     .ProjectDetails-description2 {
-        grid-area: a2-start / a2-start /d2-end / d2-start;
+        grid-area: aa2-start / aa2-start / dd2-end / dd2-start;
     }
 
     .ProjectDetails-background2 {
         background-color: var(--color-text-secondary);
-        grid-area: d2-start / d2-start / e2-end / e2-end;
+        grid-area: dd2-start / dd2-start / ee2-end / ee2-end;
     }
 }
 
@@ -125,22 +125,22 @@
     .ProjectDetails-section {
         grid-template-columns: 0 1fr 0;
         grid-gap: 0;
-        grid-template-rows: 60px 0.1fr 0.5fr 0.5fr 0.1fr 1fr 0.3fr;
+        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.1fr 1fr 0.3fr;
     }
     .ProjectDetails-video1 {
-        grid-area: b1;
+        grid-area: bb1;
     }
 
     .ProjectDetails-description1 {
-        grid-area: e1;
+        grid-area: ee1;
     }
 
     .ProjectDetails-video2 {
-        grid-area: h1;
+        grid-area: hh1;
     }
 
     .ProjectDetails-description2 {
-        grid-area: b2;
+        grid-area: bb2;
     }
 
 }
