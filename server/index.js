@@ -6,13 +6,6 @@ const PORT = process.env.PORT || 3001;
 
 const express = require('express');
 const emailApp = express();
-const https = require('https');
-const fs = require('fs');
-
-let privateKey  = fs.readFileSync('/etc/letsencrypt/live/talkinghead.allanpichardo.com/privkey.pem', 'utf8');
-let certificate = fs.readFileSync('/etc/letsencrypt/live/talkinghead.allanpichardo.com/fullchain.pem', 'utf8');
-
-let credentials = {key: privateKey, cert: certificate};
 
 emailApp.use(express.urlencoded({ extended: true }));
 emailApp.use(function(req, res, next) {
@@ -20,9 +13,6 @@ emailApp.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
-
-let httpsServer = https.createServer(credentials, emailApp);
-
 const EMAIL_PORT = 3002;
 
 dotenv.config();
@@ -77,7 +67,7 @@ emailApp.post('/email', (req, res) => {
 
 });
 
-httpsServer.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`CRA Server listening on port ${PORT}!`);
   emailApp.listen(EMAIL_PORT, () => {
     console.log(`EMAIL Server listening on port ${EMAIL_PORT}!`);

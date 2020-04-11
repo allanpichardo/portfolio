@@ -5,7 +5,7 @@ export default class Utils {
 
     static sendEmail(from, subject, message, callback) {
 
-        fetch('https://allanpichardo.com:3002/email', {
+        fetch('https://email.allanpichardo.com/email', {
             method: 'POST',
             mode: 'cors',
             headers: {
