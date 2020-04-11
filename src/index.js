@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from "react-router-dom";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 ReactDOM.hydrate(
-    <BrowserRouter forceRefresh={true}>
-        <App />
-    </BrowserRouter>,
+    <HelmetProvider>
+        <BrowserRouter forceRefresh={true}>
+            <App />
+        </BrowserRouter>
+    </HelmetProvider>,
     document.getElementById('root')
 );
 

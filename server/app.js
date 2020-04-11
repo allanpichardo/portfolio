@@ -1,6 +1,6 @@
 import {StaticRouter} from "react-router-dom";
 import { createReactAppExpress } from '@cra-express/core';
-import ReactDOMServer from 'react-dom/server';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import App from "../src/App";
 
 const path = require('path');
@@ -10,11 +10,15 @@ const clientBuildPath = path.resolve(__dirname, '../client');
 
 function handleUniversalRender(req, res) {
 
+  const helmetContext = {};
+
   const context = {};
   const el = (
-      <StaticRouter location={req.url} context={context}>
-        <App />
-      </StaticRouter>
+      <HelmetProvider context={helmetContext}>
+        <StaticRouter location={req.url} context={context}>
+          <App />
+        </StaticRouter>
+      </HelmetProvider>
   );
 
   if (context.url) {

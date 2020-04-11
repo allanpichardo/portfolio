@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectDetails.css';
 import slugify from "slugify";
 import Utils from "../utils/utils";
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet-async";
 
 export default class ProjectDetails extends React.Component {
 
