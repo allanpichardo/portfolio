@@ -71,7 +71,7 @@ export default class ProjectDetails extends React.Component {
                         </div>
                         <div className="ProjectDetails-background2"/>
                         <div className="ProjectDetails-video2">
-                            <video playsinline muted={true} autoPlay={true} loop={true} src={Utils.getResourcePath(this.state.project.media_dir, this.state.project.video2)}/>
+                            <video playsInline={true} muted={true} autoPlay={true} loop={true} src={Utils.getResourcePath(this.state.project.media_dir, this.state.project.video2)}/>
                         </div>
                         <div className="ProjectDetails-description2">
                             <p><mark>{this.state.project.description_2}</mark></p>
