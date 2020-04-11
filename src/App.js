@@ -19,7 +19,6 @@ export default class App extends React.Component {
     }
 
     handlePanelInView(video) {
-        console.log(video);
         let player = this.backgroundVideo.current;
         if(video) {
             if(player.style.opacity > 0.0) {

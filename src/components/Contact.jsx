@@ -85,24 +85,24 @@ export default class Contact extends React.Component {
                     <h1><mark>Let's get in touch</mark></h1>
                 </div>
                 <div className="Contact-form">
-                    {!this.state.isSent ? <form>
+                    {!this.state.isSent ? <form onSubmit={this.handleSendClicked}>
                         <label htmlFor="sender"><mark>From</mark></label>
                         <br/>
-                        <input type="email" onChange={this.handleEmailChange}/>
+                        <input type="email" onChange={this.handleEmailChange} required={true}/>
                         <br/><br/>
                         <label htmlFor="sender"><mark>Subject</mark></label>
                         <br/>
-                        <input type="text" onChange={this.handleSubjectChange}/>
+                        <input type="text" onChange={this.handleSubjectChange} required={true}/>
                         <br/><br/>
                         <label htmlFor="subject"><mark>Message</mark></label>
                         <br/>
-                        <textarea onChange={this.handleBodyChange}/>
+                        <textarea onChange={this.handleBodyChange} required={true}/>
                         <br/>
                             <div className="Contact-error" ref={this.contactError}>
                                 <p><mark>&nbsp;<span className="material-icons">error_outline</span>&nbsp;Something went wrong:&nbsp;{this.state.error}</mark></p>
                             </div>
                         <br/>
-                        <button onClick={this.handleSendClicked}>&nbsp;Send!&nbsp;</button>
+                        <input type="submit" value="&nbsp;Send!&nbsp;"/>
                     </form> :
                     <div className="Contact-success">
                         <h3>
