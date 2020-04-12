@@ -19,6 +19,7 @@ class NavBar extends React.Component {
         this.generateWorkDropdown = this.generateWorkDropdown.bind(this);
         this.getDropdownOptions = this.getDropdownOptions.bind(this);
         this.calculateDropdownPlacement = this.calculateDropdownPlacement.bind(this);
+        this.handleUnfocusNavigation = this.handleUnfocusNavigation.bind(this);
     }
 
     calculateDropdownPlacement() {
@@ -59,6 +60,17 @@ class NavBar extends React.Component {
         });
     }
 
+    handleUnfocusNavigation(e) {
+        let div = document.querySelector('.NavBar-dropdown');
+        if(this.state.isWorkDropdownShowing && (e.target === div || e.target === this.workLink.current.parentElement)) {
+            this.setState({
+                isWorkDropdownShowing: false,
+            }, () => {
+                div.style.visibility = 'hidden';
+            });
+        }
+    }
+
     componentDidMount() {
         this.generateWorkDropdown();
         window.onresize = this.calculateDropdownPlacement;
@@ -68,7 +80,7 @@ class NavBar extends React.Component {
         return(
             <div className="NavBar">
                 <div/>
-                <div>
+                <div onPointerLeave={this.handleUnfocusNavigation}>
                     <NavLink ref={this.workLink} exact to="/" activeClassName="NavBar-active" isActive={(match, location) => {
                         return location.pathname === '/' || location.pathname.includes('projects');
                     }} onMouseEnter={() => {
@@ -84,16 +96,7 @@ class NavBar extends React.Component {
                     <NavLink exact to="/about" activeClassName="NavBar-active">&nbsp;About&nbsp;</NavLink>
                     <NavLink exact to="/contact" activeClassName="NavBar-active">&nbsp;Contact&nbsp;</NavLink>
                 </div>
-                <div ref={this.dropdown} className="NavBar-dropdown" onPointerLeave={(e) => {
-                    let div = document.querySelector('.NavBar-dropdown');
-                    if(this.state.isWorkDropdownShowing && e.target === div) {
-                        this.setState({
-                            isWorkDropdownShowing: false,
-                        }, () => {
-                            div.style.visibility = 'hidden';
-                        });
-                    }
-                }}>
+                <div ref={this.dropdown} className="NavBar-dropdown" onPointerLeave={this.handleUnfocusNavigation}>
                     {this.getDropdownOptions()}
                 </div>
             </div>

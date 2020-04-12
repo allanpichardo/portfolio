@@ -1,9 +1,7 @@
 .IntroPanel {
     align-self: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: x-large;
+    justify-self: center;
+    font-size: 1.2rem;
     margin-left: 20px;
     margin-right: 20px;
 }
