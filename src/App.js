@@ -69,6 +69,11 @@ export default class App extends React.Component {
                         }}/>
                     </Switch>
                 </div>
+                <div className="App-social">
+                    <a href="https://github.com/allanpichardo" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"/></a>
+                    <a href="https://instagram.com/mylovemhz" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"/></a>
+                    <a href="https://www.linkedin.com/in/allanpichardo" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"/></a>
+                </div>
             </div>
         );
     }
