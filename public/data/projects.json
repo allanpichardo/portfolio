@@ -1,5 +1,17 @@
 [
   {
+    "name": "Don't Panic",
+    "subtitle": "2019 - Unity, C#, Python, ML-Agents, Tensorflow",
+    "media_dir": "/dontpanic",
+    "cover_video": "dp2.mp4",
+    "description_1": "The objective of this research was to experiment with different ways of obtaining biofeedback through virtual reality (VR) headsets and use them to somehow modify the user experience to make each gameplay unique and interesting for the player. Our experiment focuses on the feedback that can be obtained from the hand movements of the player and attempts to adjust the difficulty of the game based on it. It is known that user-inputs (biofeedback) can be obtained through most standard VR headsets, which is why the experiment pays more emphasis on merging VR with Artificial Intelligence (AI). The AI helps analyze the user-inputs and classify them to build relationships between the virtual world and the movements of the player.",
+    "description_2": "The game we developed consists of a \"Zombie-Shooter\" type game in which the player must survive waves of incoming zombies. The difficulty of the game increases based on the arousal (excited/nervousness) of the player as well as the progression of the game. The arousal of the player is determined by the AI through the analysis of hand movements. By doing this experiment we hope to better understand the interconnectivity between these two emerging fields of technology i.e. Virtual Reality and Artificial Intelligence.",
+    "link": "https://github.com/allanpichardo/dontpanic",
+    "notes": "Don't Panic is a zombie shooter that uses a neural network to analyze the player's emotional state in real-time and modulates the difficulty depending on how nervous they are while playing.",
+    "youtube_video_id": "610nC2mYzb0",
+    "video2": "dp1.mp4"
+  },
+  {
     "name": "Jump*",
     "subtitle": "2019 - Unity, C#",
     "media_dir": "/jump",
@@ -8,20 +20,8 @@
     "description_2": "Expanding on Chu Chu Rocket's limited movement, where characters may only move forward and turn right in 90-degree angles on a 2D plane, the portals in Jump* allow the user to teleport to and from any of the six spatial dimensions. The added freedom of movement increases the difficulty of the puzzles and opens new opportunities for unique gameplay.",
     "link": "https://jump.allanpichardo.com",
     "notes": "Jump* is a 3D puzzle game combining the mechanics of Chu Chu Rocket and Portal.",
-    "youtube_video_id": "HDOnMSUS5-c",
+    "youtube_video_id": "xo6FIVBXoSs",
     "video2": "jump2.mp4"
-  },
-  {
-    "name": "Talkinghead",
-    "subtitle": "2019 - Node.js, Python, SQL, WebSocket, JavaScript, Natural Language Processing, Web Audio API",
-    "media_dir": "/talkinghead",
-    "cover_video": "th1.mp4",
-    "link": "https://talkinghead.allanpichardo.com",
-    "notes": "Talkinghead is a virtual pundit. Two chatbots that generate discussions about controversial tweets in real-time.",
-    "youtube_video_id": "YNdpiSYdJkE",
-    "description_1": "Talkinghead is a commentary on the idea of post-truth and the toxic feedback loop between traditional news media and social media in the form of an interactive, satirical, news program. It features two animated chatbots that generate commentary in response to trending news topics on Twitter.",
-    "description_2": "The chatbots monitor Twitter for specific hashtags and use natural language processing to analyze the contents of the tweets. Based on the keywords found in the body of the tweets, Talkinghead will generate a commentary script in real-time and begin to read it, simulating pundits in a news program.",
-    "video2": "th1.mp4"
   },
   {
     "name": "Equilibria",
@@ -34,6 +34,18 @@
     "description_1": "Equilibria is an interactive installation built in collaboration with Emily Wu, Audre-Laure St. Louis, Nick Prud'homme, and Dylan Hancock exploring the negative effects of technological progress on the surrounding natural environment. The installation consists of an artificial system of trees and roots connected to a central source of water.",
     "description_2": "Using computer vision, the installation tracks viewers as they walk around the artificial forest and releases a contaminant into the central reservoir if the viewer lingers in one place for too long. Over time, a critical accumulation of contaminated water corrupts the system, killing the surrounding vegetation and deactivating the installation.",
     "video2": "drop1.mp4"
+  },
+  {
+    "name": "Talkinghead",
+    "subtitle": "2019 - Node.js, Python, SQL, WebSocket, JavaScript, Natural Language Processing, Web Audio API",
+    "media_dir": "/talkinghead",
+    "cover_video": "th1.mp4",
+    "link": "https://talkinghead.allanpichardo.com",
+    "notes": "Talkinghead is a virtual pundit. Two chatbots that generate discussions about controversial tweets in real-time.",
+    "youtube_video_id": "YNdpiSYdJkE",
+    "description_1": "Talkinghead is a commentary on the idea of post-truth and the toxic feedback loop between traditional news media and social media in the form of an interactive, satirical, news program. It features two animated chatbots that generate commentary in response to trending news topics on Twitter.",
+    "description_2": "The chatbots monitor Twitter for specific hashtags and use natural language processing to analyze the contents of the tweets. Based on the keywords found in the body of the tweets, Talkinghead will generate a commentary script in real-time and begin to read it, simulating pundits in a news program.",
+    "video2": "th1.mp4"
   },
   {
     "name": "Love MHz",
