@@ -125,7 +125,7 @@
     .ProjectDetails-section {
         grid-template-columns: 0 1fr 0;
         grid-gap: 0;
-        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.1fr 1fr 0.3fr;
+        grid-template-rows: 0.1fr 0.1fr 0.15fr 0.5fr 0.1fr 1fr 0.3fr;
     }
     .ProjectDetails-video1 {
         grid-area: bb1;
