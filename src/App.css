@@ -25,7 +25,7 @@
 }
 
 .App-social {
-    background-color: var(--color-text-secondary);
+    background-color: var(--color-accent);
     justify-self: end;
     align-self: center;
     z-index: 3;
@@ -42,7 +42,7 @@
 }
 
 .App-social a {
-    color: var(--color-accent);
+    color: var(--color-text-secondary);
 }
 
 .App-video {
