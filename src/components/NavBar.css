@@ -1,8 +1,9 @@
 .NavBar {
     display: grid;
+    text-align: right;
     align-items: center;
     height: 100%;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-right: 20px;
     overflow: visible;
 }
