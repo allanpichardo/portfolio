@@ -1,5 +1,17 @@
 [
   {
+    "name": "FTDG",
+    "subtitle": "2020 - Unity, C#, Python, Tensorflow",
+    "media_dir": "/ftdg",
+    "cover_video": "ftdg1.mp4",
+    "description_1": "Follow the Drinking Gourd is an autobiographical exploration of the histories of my ancestors which were lost due to the transatlantic slave trade. This screen-based work is presented as an interactive game in which the user, standing on a ship in open sea, can look around and discover constellations of stars. Each star in the sky represents a short clip of music from across the Americas. As constellations are discovered, a neural network generates a path connecting the various musical traditions of the African diaspora and tracing them back to their ancient kingdoms of origin.",
+    "description_2": "Simultaneously, on a separate screen, users can see a map showing the real-life trajectories that are traced by the player’s constellations. As various users play the game, the trajectories on the map accumulate and grow. Over time, the paths on the map generate a map of the transatlantic slave trade.",
+    "link": "https://github.com/allanpichardo/FTDG",
+    "notes": "Follow the Drinking Gourd is an interactive experience tracing the African diaspora though the various musical traditions of the Americas. Discover constellations of music that guide the user on a path to our musical ancestors.",
+    "youtube_video_id": "QZ-WgaMMelU",
+    "video2": "ftdg2.mp4"
+  },
+  {
     "name": "Don't Panic",
     "subtitle": "2019 - Unity, C#, Python, ML-Agents, Tensorflow",
     "media_dir": "/dontpanic",
