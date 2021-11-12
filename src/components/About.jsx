@@ -37,7 +37,7 @@ export default class About extends React.Component {
             <div className="About">
                 <div>
                     <h1><mark>Allan Pichardo</mark></h1>
-                    <mark><a href={this.state.resume_path} target="_blank">💾 Resume</a></mark>
+                    {/*<mark><a href={this.state.resume_path} target="_blank">💾 Resume</a></mark>*/}
                 </div>
                 <p><mark>{this.state.about}</mark></p>
                 <p/>

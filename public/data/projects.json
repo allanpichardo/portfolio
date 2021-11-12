@@ -1,15 +1,39 @@
 [
   {
     "name": "FTDG",
-    "subtitle": "2020 - Unity, C#, Python, Tensorflow",
+    "subtitle": "2021 - Unity, C#, Python, Tensorflow",
     "media_dir": "/ftdg",
     "cover_video": "ftdg1.mp4",
-    "description_1": "Follow the Drinking Gourd is an autobiographical exploration of the histories of my ancestors which were lost due to the transatlantic slave trade. This screen-based work is presented as an interactive game in which the user, standing on a ship in open sea, can look around and discover constellations of stars. Each star in the sky represents a short clip of music from across the Americas. As constellations are discovered, a neural network generates a path connecting the various musical traditions of the African diaspora and tracing them back to their ancient kingdoms of origin.",
+    "description_1": "Follow the Drinking Gourd is an autobiographical exploration of the histories of my ancestors which were lost due to the transatlantic slave trade. This VR-based work is presented as an interactive game in which the user, standing on a ship in open sea, can look around and discover constellations of stars. Each star in the sky represents a short clip of music from across the Americas. As constellations are discovered, a neural network generates a path connecting the various musical traditions of the African diaspora and tracing them back to their ancient kingdoms of origin.",
     "description_2": "Simultaneously, on a separate screen, users can see a map showing the real-life trajectories that are traced by the player’s constellations. As various users play the game, the trajectories on the map accumulate and grow. Over time, the paths on the map generate a map of the transatlantic slave trade.",
     "link": "https://github.com/allanpichardo/FTDG",
     "notes": "Follow the Drinking Gourd is an interactive experience tracing the African diaspora though the various musical traditions of the Americas. Discover constellations of music that guide the user on a path to our musical ancestors.",
-    "youtube_video_id": "QZ-WgaMMelU",
+    "youtube_video_id": "kYELOjDUEqs",
     "video2": "ftdg2.mp4"
+  },
+  {
+    "name": "Talkinghead",
+    "subtitle": "2020 - Node.js, Python, SQL, WebSocket, JavaScript, Natural Language Processing, Web Audio API",
+    "media_dir": "/talkinghead",
+    "cover_video": "crt.mp4",
+    "link": "https://github.com/allanpichardo/talkinghead",
+    "notes": "Talkinghead is a virtual pundit. Two chatbots that generate discussions about controversial tweets in real-time.",
+    "youtube_video_id": "iNdd1kfA4JE",
+    "description_1": "Talkinghead is a commentary on the idea of post-truth and the toxic feedback loop between traditional news media and social media in the form of an interactive, satirical, news program. It features two animated chatbots that generate commentary in response to trending news topics on Twitter.",
+    "description_2": "The chatbots monitor Twitter for specific hashtags and use natural language processing to analyze the contents of the tweets. Based on the keywords found in the body of the tweets, Talkinghead will generate a commentary script in real-time and begin to read it, simulating pundits in a news program.",
+    "video2": "crt.mp4"
+  },
+  {
+    "name": "Equilibria",
+    "subtitle": "2020 - Max/MSP, OpenCV, Arduino, Android SDK",
+    "media_dir": "/equilibria",
+    "cover_video": "eq1.mp4",
+    "link": "https://falaeco.github.io/cart411-OVERFLOW",
+    "notes": "Equilibria is a dialogue between an ecosystem in peril and the viewer. As visitors interact with an interactive sculpture, they are forced to confront the reality that their consumption ultimately leads to the system’s destruction. This realization prompts viewers to consider how best to conserve the experience for future visitors, who serve as a proxy for future generations. Equilibria invites viewers to think about their place within the global ecosystem and hopes to develop an awareness of their own finite reality",
+    "youtube_video_id": "alJGOYO-9xU",
+    "description_1": "Equilibria is an interactive installation built in collaboration with Emily Wu, Audre-Laure St. Louis, Nick Prud'homme, and Dylan Hancock exploring the negative effects of technological progress on the surrounding natural environment. The installation consists of an artificial system of trees and roots connected to a central source of water.",
+    "description_2": "Using computer vision, the installation tracks viewers as they walk around the artificial forest and releases a contaminant into the central reservoir if the viewer lingers in one place for too long. Over time, a critical accumulation of contaminated water corrupts the system, killing the surrounding vegetation and deactivating the installation.",
+    "video2": "drop1.mp4"
   },
   {
     "name": "Don't Panic",
@@ -34,30 +58,6 @@
     "notes": "Jump* is a 3D puzzle game combining the mechanics of Chu Chu Rocket and Portal.",
     "youtube_video_id": "xo6FIVBXoSs",
     "video2": "jump2.mp4"
-  },
-  {
-    "name": "Equilibria",
-    "subtitle": "2020 - Max/MSP, OpenCV, Arduino, Android SDK",
-    "media_dir": "/equilibria",
-    "cover_video": "eq1.mp4",
-    "link": "https://falaeco.github.io/cart411-OVERFLOW",
-    "notes": "Equilibria is a dialogue between an ecosystem in peril and the viewer. As visitors interact with an interactive sculpture, they are forced to confront the reality that their consumption ultimately leads to the system’s destruction. This realization prompts viewers to consider how best to conserve the experience for future visitors, who serve as a proxy for future generations. Equilibria invites viewers to think about their place within the global ecosystem and hopes to develop an awareness of their own finite reality",
-    "youtube_video_id": "alJGOYO-9xU",
-    "description_1": "Equilibria is an interactive installation built in collaboration with Emily Wu, Audre-Laure St. Louis, Nick Prud'homme, and Dylan Hancock exploring the negative effects of technological progress on the surrounding natural environment. The installation consists of an artificial system of trees and roots connected to a central source of water.",
-    "description_2": "Using computer vision, the installation tracks viewers as they walk around the artificial forest and releases a contaminant into the central reservoir if the viewer lingers in one place for too long. Over time, a critical accumulation of contaminated water corrupts the system, killing the surrounding vegetation and deactivating the installation.",
-    "video2": "drop1.mp4"
-  },
-  {
-    "name": "Talkinghead",
-    "subtitle": "2019 - Node.js, Python, SQL, WebSocket, JavaScript, Natural Language Processing, Web Audio API",
-    "media_dir": "/talkinghead",
-    "cover_video": "th1.mp4",
-    "link": "https://talkinghead.allanpichardo.com",
-    "notes": "Talkinghead is a virtual pundit. Two chatbots that generate discussions about controversial tweets in real-time.",
-    "youtube_video_id": "YNdpiSYdJkE",
-    "description_1": "Talkinghead is a commentary on the idea of post-truth and the toxic feedback loop between traditional news media and social media in the form of an interactive, satirical, news program. It features two animated chatbots that generate commentary in response to trending news topics on Twitter.",
-    "description_2": "The chatbots monitor Twitter for specific hashtags and use natural language processing to analyze the contents of the tweets. Based on the keywords found in the body of the tweets, Talkinghead will generate a commentary script in real-time and begin to read it, simulating pundits in a news program.",
-    "video2": "th1.mp4"
   },
   {
     "name": "Love MHz",
